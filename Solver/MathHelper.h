@@ -4,11 +4,11 @@ namespace miit::math {
     class MathHelper
     {
      /**
-    @brief Метод сравнения двух вещественных чисел с заданной точностью.
-    @param lha Первое число.
-    @param rha Второе число.
-    @param precision Точность сравнения.
-    @return true, если \a lha и \a rha равны.
+    @brief РњРµС‚РѕРґ СЃСЂР°РІРЅРµРЅРёВ¤ РґРІСѓС… РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР» СЃ Р·Р°РґР°РЅРЅРѕР№ С‚РѕС‡РЅРѕСЃС‚СЊСЋ.
+    @param lha РџРµСЂРІРѕРµ С‡РёСЃР»Рѕ.
+    @param rha Р’С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ.
+    @param precision РўРѕС‡РЅРѕСЃС‚СЊ СЃСЂР°РІРЅРµРЅРёВ¤.
+    @return true, РµСЃР»Рё \a lha Рё \a rha СЂР°РІРЅС‹.
     */
         bool AreEqual(
             const double lha,
@@ -16,10 +16,10 @@ namespace miit::math {
             const double precision);
 
         /**
-       @brief Метод сравнения двух вещественных чисел с точностью по умолчанию.
-       @param lha Первое число.
-       @param rha Второе число.
-       @return true, если \a lha и \a rha равны.
+       @brief РњРµС‚РѕРґ СЃСЂР°РІРЅРµРЅРёВ¤ РґРІСѓС… РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР» СЃ С‚РѕС‡РЅРѕСЃС‚СЊСЋ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
+       @param lha РџРµСЂРІРѕРµ С‡РёСЃР»Рѕ.
+       @param rha Р’С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ.
+       @return true, РµСЃР»Рё \a lha Рё \a rha СЂР°РІРЅС‹.
        */
         bool AreEqual(
             const double lha,
