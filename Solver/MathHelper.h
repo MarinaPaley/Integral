@@ -7,7 +7,7 @@ namespace miit::math {
     @brief Метод сравнения двух вещественных чисел с заданной точностью.
     @param lha Первое число.
     @param rha Второе число.
-    @param precision Точность сравнени¤.
+    @param precision Точность сравнения.
     @return true, если \a lha и \a rha равны.
     */
         bool AreEqual(
