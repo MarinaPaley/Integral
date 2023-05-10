@@ -44,7 +44,7 @@ public:
      * @brief Расчет интеграла методом левых прямоугольников.
      * @return Численное знаение интеграла.
     */
-    double GetIntegral() const;
+    double GetValue() const;
 
 };
 

@@ -48,7 +48,7 @@ namespace
          * @brief Расчет интеграла методом средних прямоугольников.
          * @return Численное знаение интеграла.
         */
-        double GetIntegral() const;
+        double GetValue() const;
     };
 }
 

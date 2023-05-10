@@ -47,7 +47,7 @@ namespace
          * @brief Расчет интеграла методом правых прямоугольников.
          * @return Численное знаение интеграла.
         */
-        double GetIntegral() const;
+        double GetValue() const;
     };
 }
 

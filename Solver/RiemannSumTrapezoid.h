@@ -48,7 +48,7 @@ namespace miit::solver
          * @brief Расчет интеграла методом трапеции.
          * @return Численное знаение интеграла.
         */
-        double GetIntegral() const;
+        double GetValue() const;
     };
 }
 
