@@ -1,7 +1,7 @@
 #pragma once
 #include <functional>
 
-namespace
+namespace miit::solver
 {
     /**
     * @brief Расчет интеграла методом средних прямоугольников.
@@ -42,7 +42,7 @@ namespace
             const double start,
             const double finish,
             const double step,
-            const std::function<double(const double)> function);
+            const std::function<double(const double)>& function);
 
         /**
          * @brief Расчет интеграла методом средних прямоугольников.
