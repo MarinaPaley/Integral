@@ -9,8 +9,8 @@
 using namespace miit::solver;
 
 /**
- * @brief Точка входа в программу.
- * @return Код \c 0 в случае успеха.
+ * @brief РўРѕС‡РєР° РІС…РѕРґР° РІ РїСЂРѕРіСЂР°РјРјСѓ.
+ * @return РљРѕРґ \c 0 РІ СЃР»СѓС‡Р°Рµ СѓСЃРїРµС…Р°.
 */
 int main()
 {
@@ -28,12 +28,12 @@ int main()
 
         auto integral = 1.0 / 3;
 
-        std::cout << "Значения интегралов, посчитанные методом"
-            << " \n - Левых прямоугольников = " << leftSum->GetValue()
-            << " \n - Правых = " << rigthSum->GetValue()
-            << " \n - Средних = " << averageSum->GetValue()
-            << " \n - Трапецией = " << trapezoidSum->GetValue()
-            << " \n - Точно = " << integral
+        std::cout << "Р—РЅР°С‡РµРЅРёСЏ РёРЅС‚РµРіСЂР°Р»РѕРІ, РїРѕСЃС‡РёС‚Р°РЅРЅС‹Рµ РјРµС‚РѕРґРѕРј"
+            << " \n - Р›РµРІС‹С… РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ = " << leftSum->GetValue()
+            << " \n - РџСЂР°РІС‹С… = " << rigthSum->GetValue()
+            << " \n - РЎСЂРµРґРЅРёС… = " << averageSum->GetValue()
+            << " \n - РўСЂР°РїРµС†РёРµР№ = " << trapezoidSum->GetValue()
+            << " \n - РўРѕС‡РЅРѕ = " << integral
             << std::endl;
     }
     catch(std::logic_error& ex)
