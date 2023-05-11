@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Solver.Tests.cpp">
+    <ClCompile Include="RiemannSumLeft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -164,7 +164,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Solver.Tests.cpp" />
+    <ClCompile Include="RiemannSumLeft.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Solver\Solver.vcxproj">
