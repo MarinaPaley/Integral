@@ -1,31 +1,20 @@
 #include <stdexcept>
 #include "RiemannSumRight.h"
 
-miit::solver::RiemannSumRight::RiemannSumRight(
+double miit::solver::RiemannSumRight::GetValue(
+
     const double start,
     const double finish,
     const double step,
-    const std::function<double(const double)>& function)
-    :start(start), finish(finish), step(step), function(function)
+    const std::function<double(const double)>& function) const
 {
-    if (start >= finish)
-    {
-        throw std::logic_error("Правая граница интегрирования должна быть больше левой!");
-    }
+    RiemannSumBase::GetValue(start, finish, step, function);
 
-    if (step <= 0)
-    {
-        throw std::logic_error("Шаг интегрирования должен быть строго положительным!");
-    }
-}
-
-double miit::solver::RiemannSumRight::GetValue() const
-{
     auto sum = 0.0;
-    for (auto x = this->start; x <= this->finish; x += this->step)
+    for (auto x = start; x <= finish; x += step)
     {
-        const auto rightValue = this->function(x + this->step);
-        sum += rightValue * this->step;
+        const auto rightValue = function(x + step);
+        sum += rightValue * step;
     }
 
     return sum;

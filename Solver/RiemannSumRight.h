@@ -1,53 +1,31 @@
 #pragma once
 #include <functional>
+#include "RiemannSumBase.h"
 
 namespace miit::solver
 {
     /**
-    * @brief Расчет интеграла методом правых прямоугольников.
+    * @brief Расчет интеграла методом левых прямоугольников.
     */
-    class RiemannSumRight
+    class RiemannSumRight : public RiemannSumBase
     {
-    private:
+        public:
         /**
-         * @brief Левая граница определенного интеграла.
+        * @brief Расчет интеграла методом левых прямоугольников.
+        * @return Численное знаение интеграла.
+        * @param start Левая граница определенного интеграла.
+        * @param finish Правая граница определенного интеграла.
+        * @param step Шаг численного расчета интеграла.
+        * @param function Функция, которую небходимо проинтегрировать.
         */
-        double start;
-
-        /**
-         * @brief Правая граница определенного интеграла.
-        */
-        double finish;
-
-        /**
-         * @brief Шаг численного расчета интеграла.
-        */
-        double step;
-
-        /**
-         * @brief Функция, которую небходимо проинтегрировать.
-        */
-        std::function<double(const double)> function;
-
-    public:
-        /**
-         * @brief Создает экземпляр класса "RiemannSumRight"
-         * @param start Левая граница определенного интеграла.
-         * @param finish Правая граница определенного интеграла.
-         * @param step Шаг численного расчета интеграла.
-         * @param function Функция, которую небходимо проинтегрировать.
-        */
-        RiemannSumRight(
+        double GetValue(
             const double start,
             const double finish,
             const double step,
-            const std::function<double(const double)>& function);
+            const std::function<double(const double)>& function) const override;
 
-        /**
-         * @brief Расчет интеграла методом правых прямоугольников.
-         * @return Численное знаение интеграла.
-        */
-        double GetValue() const;
+        RiemannSumRight() = default;
+        ~RiemannSumRight() = default;
     };
 }
 
