@@ -18,5 +18,14 @@
     <ClCompile Include="RiemannSumLeft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RiemannSumRight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RiemannSumAverage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RiemannSumTrapezoid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
