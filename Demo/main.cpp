@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdexcept>
+#include <vector>
 
 #include "../Solver/RiemannSumAverage.h"
 #include "../Solver/RiemannSumLeft.h"
@@ -34,6 +35,17 @@ int main()
             << " \n - Трапецией = " << trapezoidSum->GetValue(left, right, step, function)
             << " \n - Точно = " << integral
             << std::endl;
+
+        std::vector<RiemannSumBase*> base;
+        base.push_back(leftSum);
+        base.push_back(rightSum);
+        base.push_back(averageSum);
+        base.push_back(trapezoidSum);
+        
+        for (auto& sum : base)
+        {
+            std::cout << sum->GetValue(left, right, step, function) << std::endl;
+        }
     }
     catch(std::logic_error& ex)
     {

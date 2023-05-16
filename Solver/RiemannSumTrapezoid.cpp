@@ -8,7 +8,7 @@ double miit::solver::RiemannSumTrapezoid::GetValue(
     const double step,
     const std::function<double(const double)>& function) const
 {
-    RiemannSumTrapezoid::GetValue(start, finish, step, function);
+    RiemannSumBase::GetValue(start, finish, step, function);
 
     auto sum = 0.0;
     for (auto x = start; x <= finish; x += step)

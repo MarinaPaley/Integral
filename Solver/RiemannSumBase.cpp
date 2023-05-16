@@ -3,10 +3,6 @@
 
 namespace miit::solver
 {
-    RiemannSumBase::RiemannSumBase()
-    {
-    }
-
     RiemannSumBase::~RiemannSumBase()
     {
     }

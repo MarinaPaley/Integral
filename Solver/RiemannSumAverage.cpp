@@ -7,7 +7,7 @@ double miit::solver::RiemannSumAverage::GetValue(
     const double step,
     const std::function<double(const double)>& function) const
 {
-    RiemannSumAverage::GetValue(start, finish, step, function);
+    RiemannSumBase::GetValue(start, finish, step, function);
 
     auto sum = 0.0;
     for (auto x = start; x <= finish; x += step)
