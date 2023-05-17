@@ -164,7 +164,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="RiemannSumAverage.cpp" />
     <ClCompile Include="RiemannSumLeft.cpp" />
+    <ClCompile Include="RiemannSumRight.cpp" />
+    <ClCompile Include="RiemannSumTrapezoid.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Solver\Solver.vcxproj">

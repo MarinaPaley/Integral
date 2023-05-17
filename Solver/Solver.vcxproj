@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="MathHelper.h" />
     <ClInclude Include="RiemannSumAverage.h" />
+    <ClInclude Include="RiemannSumBase.h" />
     <ClInclude Include="RiemannSumLeft.h" />
     <ClInclude Include="RiemannSumRight.h" />
     <ClInclude Include="RiemannSumTrapezoid.h" />
@@ -140,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="MathHelper.cpp" />
     <ClCompile Include="RiemannSumAverage.cpp" />
+    <ClCompile Include="RiemannSumBase.cpp" />
     <ClCompile Include="RiemannSumLeft.cpp" />
     <ClCompile Include="RiemannSumRight.cpp" />
     <ClCompile Include="RiemannSumTrapezoid.cpp" />
